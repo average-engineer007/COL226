@@ -1,0 +1,1 @@
+to run the program create a text file named test.txt and run make on terminal 

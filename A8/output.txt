@@ -1,0 +1,17 @@
+Fact(
+	Function{ Fname(f) , Arguments(true) }
+)
+ 
+Rule(
+	Head :  Function{ Fname(g) , Arguments(Int(5)) }
+	Goal : [ Function{ Fname(h) , Arguments(Int(3)) } ; Function{ Fname(t) , Arguments(BinOp(+, Int(4),Int(5))) } ]
+)
+ 
+Rule(
+	Head :  Function{ Fname(j) , Arguments(BinOp(+, Int(5),BinOp(/, Int(3),BinOp(*, Int(2),UnOp(-, BinOp(+, Int(3),BinOp(*, Var(x),BinOp(+, Var(asc),BinOp(-, Int(2),Int(2))))))))) , BinOp(+, Var(x),BinOp(-, Int(4),Int(3))) , BoolOp(AND, true,BoolOp(OR, false,Function{ Fname(g) , Arguments(BinOp(/, Int(3),Int(2))) }))) }
+	Goal : [ Function{ Fname(h) , Arguments(Int(3) , Int(2)) } ; Function{ Fname(r) , Arguments(Var(akldfl) , Var(qjkldf)) } ]
+)
+ 
+Fact(
+	Function{ Fname(f) , Arguments(BinOp(+, Int(2),Int(3))) }
+)
